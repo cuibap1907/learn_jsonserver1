@@ -1,0 +1,23 @@
+@baseUrl = http://localhost:3000/api
+
+# @get category
+GET {{baseUrl}}/categories
+
+###
+POST  {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+    "name": "Tivi"
+}
+###
+PATCH   {{baseUrl}}/categories/3
+Content-Type: application/json
+
+{
+    "name": "New Tivi"
+}
+
+###
+DELETE   {{baseUrl}}/categories/2
+

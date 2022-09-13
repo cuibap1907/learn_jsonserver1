@@ -1,0 +1,38 @@
+@baseUrl = http://localhost:3000/api
+
+# @get category
+GET {{baseUrl}}/products
+
+###
+
+# @get category
+GET {{baseUrl}}/products?price_gte=900
+
+###
+
+# @get category
+GET {{baseUrl}}/products?_page=1&_limit=2
+
+###
+
+# @get category
+GET {{baseUrl}}/products?_sort=price&_order=asc
+
+###
+POST  {{baseUrl}}/products
+Content-Type: application/json
+
+{
+    "name": "Tivi"
+}
+###
+PATCH   {{baseUrl}}/products/3
+Content-Type: application/json
+
+{
+    "name": "New Tivi"
+}
+
+###
+DELETE   {{baseUrl}}/products/2
+

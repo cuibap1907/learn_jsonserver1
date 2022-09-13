@@ -1,0 +1,25 @@
+{
+  "name": "json-server1",
+  "version": "1.0.0",
+  "description": "demo json server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js",
+    "start": "node main.js",
+    "generate-data": "node generate-data.js"
+  },
+  "keywords": [
+    "json",
+    "server"
+  ],
+  "author": "Money Lee",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "nodemon": "^2.0.19"
+  }
+}
