@@ -11,6 +11,12 @@ GET {{baseUrl}}/products?price_gte=900
 ###
 
 # @get category
+GET {{baseUrl}}/products?price=123
+
+
+###
+
+# @get category
 GET {{baseUrl}}/products?_page=1&_limit=2
 
 ###
@@ -23,15 +29,21 @@ POST  {{baseUrl}}/products
 Content-Type: application/json
 
 {
-    "name": "Tivi"
-}
+    "categoryId": "07984437-97c7-496c-b566-ab11eeb1a244",
+    "name": "Money Lee added new",
+    "price": 123,
+    "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+    "thumbnailUrl": "https://loremflickr.com/400/400"
+  }
 ###
-PATCH   {{baseUrl}}/products/3
+PATCH   {{baseUrl}}/products/RXXBUxI
 Content-Type: application/json
 
 {
-    "name": "New Tivi"
-}
+    "name": "Money Lee updated new",
+    "price": 456,
+    "thumbnailUrl": "https://loremflickr.com/400/400"
+  }
 
 ###
 DELETE   {{baseUrl}}/products/2
